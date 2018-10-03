@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+    <script>
+
+      function show()
+      {
+                      google.script.run.withSuccessHandler(onSuccess).showadd();
+
+      }
+      
+      
+      function onSuccess(txt)
+      {
+          
+          var element = document.getElementById("mydiv");
+          element.innerHTML=txt;
+       }
+   </script>
+
+
+
+
+
+<html>
+  
+  
+  <head>
+    <base target="_top">
+  </head>
+  
+    
+  
+  
+  <body>
+
+            <input type="button" id= "button1" value="SHOW" alignment="center" onclick="show()" />  
+            <div id='mydiv'> </div>
+  </body>
+  
+  
+</html>
+
+
